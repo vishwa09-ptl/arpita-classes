@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Arpita Classes - Premier IELTS Coaching, Spoken English & Phonics Classes in Nadiad, Gujarat. 15+ Years of Excellence. Book a Free Demo Today!">
+<meta name="keywords" content="IELTS coaching Nadiad, Spoken English classes Gujarat, Phonics classes Nadiad, IELTS preparation Gujarat, English language institute Nadiad">
+<title>Arpita Classes – IELTS & English Excellence | Nadiad, Gujarat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+/* ==============================
+   DESIGN TOKENS
+============================== */
+:root {
+  --navy:      #0B1F4A;
+  --blue:      #1565C0;
+  --sky:       #2196F3;
+  --orange:    #FF6B2B;
+  --amber:     #FFB300;
+  --white:     #FFFFFF;
+  --off-white: #F4F7FF;
+  --slate:     #64748B;
+  --light:     #E8EFF9;
+  --glass-bg:  rgba(255,255,255,0.10);
+  --glass-border: rgba(255,255,255,0.20);
+  --shadow-lg: 0 20px 60px rgba(11,31,74,0.15);
+  --shadow-card: 0 8px 32px rgba(11,31,74,0.10);
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  --transition: 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ==============================
+   RESET & BASE
+============================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: var(--white);
+  color: var(--navy);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* ==============================
+   TYPOGRAPHY
+============================== */
+.display { font-family: 'Fraunces', serif; }
+h1 { font-size: clamp(2.4rem, 5vw, 4.2rem); line-height: 1.1; font-weight: 900; }
+h2 { font-size: clamp(1.8rem, 3.5vw, 3rem); line-height: 1.2; font-weight: 800; }
+h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 700; }
+p  { font-size: 1rem; color: var(--slate); line-height: 1.75; }
+
+/* ==============================
+   UTILITIES
+============================== */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.section-pad { padding: 100px 0; }
+.section-pad-sm { padding: 60px 0; }
+.text-center { text-align: center; }
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--light); color: var(--blue);
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 6px 16px; border-radius: 100px; margin-bottom: 16px;
+}
+.badge i { color: var(--orange); font-size: 0.8rem; }
+.section-title { color: var(--navy); margin-bottom: 16px; }
+.section-sub { max-width: 600px; margin: 0 auto 56px; font-size: 1.05rem; }
+
+/* BUTTONS */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700; font-size: 0.95rem;
+  padding: 14px 28px; border-radius: 100px;
+  cursor: pointer; transition: var(--transition);
+  border: none; white-space: nowrap;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--orange), #E55B1F);
+  color: var(--white);
+  box-shadow: 0 8px 24px rgba(255,107,43,0.35);
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(255,107,43,0.45); }
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(8px);
+}
+.btn-outline:hover { background: rgba(255,255,255,0.15); border-color: var(--white); }
+.btn-navy {
+  background: var(--navy);
+  color: var(--white);
+  box-shadow: 0 8px 24px rgba(11,31,74,0.25);
+}
+.btn-navy:hover { transform: translateY(-3px); background: #0d2660; }
+
+/* GRADIENT TEXT */
+.grad { background: linear-gradient(135deg, var(--sky), var(--orange)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+/* ==============================
+   NAVBAR
+============================== */
+#navbar {
+  position: fixed; top: 0; width: 100%; z-index: 1000;
+  padding: 18px 0;
+  transition: var(--transition);
+}
+#navbar.scrolled {
+  background: rgba(11,31,74,0.96);
+  backdrop-filter: blur(20px);
+  padding: 12px 0;
+  box-shadow: 0 4px 24px rgba(11,31,74,0.3);
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo {
+  display: flex; align-items: center; gap: 12px;
+}
+.logo-icon {
+  width: 44px; height: 44px;
+  background: linear-gradient(135deg, var(--orange), #E55B1F);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Fraunces', serif; color: white; font-size: 1.3rem; font-weight: 900;
+  flex-shrink: 0;
+}
+.logo-text { color: white; }
+.logo-name { font-weight: 800; font-size: 1.1rem; letter-spacing: -0.02em; line-height: 1.2; }
+.logo-tag { font-size: 0.7rem; color: rgba(255,255,255,0.6); letter-spacing: 0.05em; }
+.nav-links {
+  display: flex; align-items: center; gap: 4px;
+}
+.nav-links a {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.88rem; font-weight: 600;
+  padding: 8px 14px; border-radius: 8px;
+  transition: var(--transition);
+}
+.nav-links a:hover { color: white; background: rgba(255,255,255,0.1); }
+.nav-cta { display: flex; align-items: center; gap: 10px; }
+.nav-phone { color: rgba(255,255,255,0.8); font-size: 0.88rem; font-weight: 600; display: flex; align-items: center; gap: 6px; }
+.nav-phone i { color: var(--orange); }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.hamburger span { width: 24px; height: 2px; background: white; border-radius: 2px; transition: var(--transition); display: block; }
+.mobile-menu {
+  display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--navy); z-index: 999; padding: 100px 24px 40px;
+  flex-direction: column; gap: 8px;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a { color: white; font-size: 1.2rem; font-weight: 700; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.mobile-menu .btn { margin-top: 24px; justify-content: center; }
+.menu-close { position: absolute; top: 20px; right: 24px; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
+
+/* ==============================
+   HERO
+============================== */
+#hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--navy) 0%, #0d2d6e 50%, #0B3A8F 100%);
+  position: relative; overflow: hidden;
+  display: flex; align-items: center;
+  padding-top: 90px;
+}
+.hero-bg-shapes {
+  position: absolute; inset: 0; overflow: hidden; pointer-events: none;
+}
+.hero-circle {
+  position: absolute; border-radius: 50%;
+  background: radial-gradient(circle, rgba(33,150,243,0.15), transparent 70%);
+}
+.hero-circle-1 { width: 700px; height: 700px; right: -200px; top: -150px; }
+.hero-circle-2 { width: 400px; height: 400px; left: -100px; bottom: -100px; background: radial-gradient(circle, rgba(255,107,43,0.1), transparent 70%); }
+.hero-dots {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.hero-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+}
+.hero-label {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,179,0,0.15); border: 1px solid rgba(255,179,0,0.3);
+  color: var(--amber); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 6px 14px; border-radius: 100px; margin-bottom: 24px;
+}
+.hero-title { color: white; margin-bottom: 20px; }
+.hero-title span { display: block; }
+.hero-title .highlight {
+  position: relative; display: inline-block;
+}
+.hero-title .highlight::after {
+  content: ''; position: absolute; bottom: 4px; left: 0; right: 0;
+  height: 4px; background: linear-gradient(90deg, var(--orange), var(--amber));
+  border-radius: 2px;
+}
+.hero-desc { color: rgba(255,255,255,0.75); font-size: 1.1rem; margin-bottom: 36px; max-width: 480px; }
+.hero-cta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; }
+.hero-stats {
+  display: flex; gap: 32px;
+}
+
+.hero-stat-num { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 900; color: white; line-height: 1; }
+.hero-stat-num span { color: var(--orange); }
+.hero-stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.55); margin-top: 2px; font-weight: 600; letter-spacing: 0.05em; }
+.hero-visual {
+  position: relative; display: flex; justify-content: center; align-items: center;
+}
+.hero-illustration {
+  width: 100%; max-width: 520px; position: relative;
+}
+.hero-main-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius-lg);
+  padding: 40px; text-align: center;
+  position: relative; overflow: hidden;
+}
+.hero-main-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, var(--sky), var(--orange));
+}
+.hero-icon-grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-bottom: 28px;
+}
+.hero-icon-box {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-sm);
+  padding: 16px 12px;
+  transition: var(--transition);
+}
+.hero-icon-box:hover { background: rgba(255,255,255,0.14); transform: translateY(-4px); }
+.hero-icon-box i { font-size: 1.5rem; margin-bottom: 6px; }
+.hero-icon-box span { display: block; font-size: 0.7rem; color: rgba(255,255,255,0.7); font-weight: 600; }
+.hero-card-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,107,43,0.2); border: 1px solid rgba(255,107,43,0.35);
+  color: #FFAB87; font-size: 0.8rem; font-weight: 700;
+  padding: 8px 16px; border-radius: 100px;
+}
+.hero-float-badge {
+  position: absolute;
+  background: white; border-radius: var(--radius-sm);
+  padding: 12px 16px; box-shadow: var(--shadow-lg);
+  display: flex; align-items: center; gap: 10px;
+  min-width: 170px;
+}
+.hero-float-badge-1 { top: -20px; right: -30px; }
+.hero-float-badge-2 { bottom: 30px; left: -40px; }
+.fhb-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.fhb-num { font-weight: 800; font-size: 1rem; color: var(--navy); line-height: 1; }
+.fhb-label { font-size: 0.68rem; color: var(--slate); font-weight: 600; }
+
+/* ==============================
+   ABOUT
+============================== */
+#about { background: var(--off-white); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.about-visual { position: relative; }
+.about-img-frame {
+  background: linear-gradient(135deg, var(--blue), var(--navy));
+  border-radius: var(--radius-lg);
+  padding: 3px; position: relative;
+}
+.about-img-inner {
+  background: var(--navy);
+  border-radius: calc(var(--radius-lg) - 3px);
+  overflow: hidden; aspect-ratio: 4/5;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 20px; padding: 40px;
+  position: relative;
+}
+.about-big-icon { font-size: 5rem; opacity: 0.15; position: absolute; bottom: 30px; right: 30px; }
+.about-content-icon { font-size: 3.5rem; margin-bottom: 16px; }
+.about-img-stat {
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-sm); padding: 20px 24px; text-align: center; width: 100%;
+}
+.about-img-stat-num { font-family: 'Fraunces', serif; font-size: 2.2rem; font-weight: 900; color: white; }
+.about-img-stat-num sup { font-size: 1.1rem; color: var(--orange); }
+.about-img-stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.6); font-weight: 600; }
+.about-float {
+  position: absolute; right: -20px; top: 40px;
+  background: white; border-radius: var(--radius-sm);
+  padding: 16px 20px; box-shadow: var(--shadow-card);
+  border-left: 4px solid var(--orange);
+}
+.about-float-num { font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 900; color: var(--navy); }
+.about-float-label { font-size: 0.72rem; color: var(--slate); font-weight: 600; }
+.about-content .badge { margin-bottom: 20px; }
+.about-text { margin-bottom: 24px; }
+.about-features { display: flex; flex-direction: column; gap: 14px; margin: 28px 0 36px; }
+.about-feature {
+  display: flex; align-items: flex-start; gap: 14px;
+}
+.af-icon {
+  width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+}
+.af-title { font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
+.af-desc { font-size: 0.82rem; color: var(--slate); }
+
+/* ==============================
+   WHY CHOOSE US
+============================== */
+#why { background: white; }
+.why-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.why-card {
+  background: var(--off-white); border-radius: var(--radius-md); padding: 36px 28px;
+  border: 2px solid transparent; transition: var(--transition);
+  position: relative; overflow: hidden;
+}
+.why-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--sky), var(--blue));
+  transform: scaleX(0); transform-origin: left; transition: var(--transition);
+}
+.why-card:hover { border-color: var(--light); box-shadow: var(--shadow-card); transform: translateY(-6px); }
+.why-card:hover::before { transform: scaleX(1); }
+.why-icon {
+  width: 60px; height: 60px; border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; margin-bottom: 20px;
+  background: linear-gradient(135deg, var(--light), #dce8f8);
+}
+.why-card h3 { font-size: 1.05rem; color: var(--navy); margin-bottom: 10px; }
+.why-card p { font-size: 0.88rem; }
+
+/* ==============================
+   COURSES
+============================== */
+#courses { background: var(--navy); }
+.courses-header { margin-bottom: 56px; }
+.courses-header .badge { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); }
+.courses-header .section-title { color: white; }
+.courses-header .section-sub { color: rgba(255,255,255,0.6); }
+.courses-tabs { display: flex; gap: 8px; justify-content: center; margin-bottom: 48px; flex-wrap: wrap; }
+.ctab {
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.7); font-weight: 700; font-size: 0.88rem;
+  padding: 10px 24px; border-radius: 100px; cursor: pointer; transition: var(--transition);
+}
+.ctab.active, .ctab:hover { background: var(--orange); border-color: var(--orange); color: white; }
+.course-panel { display: none; }
+.course-panel.active { display: block; }
+.course-card {
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px); border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.cc-header {
+  padding: 48px; display: flex; align-items: flex-start; gap: 28px;
+}
+.cc-icon-big {
+  width: 80px; height: 80px; border-radius: var(--radius-sm); flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 2.2rem;
+}
+.cc-title { color: white; font-size: clamp(1.4rem,2.5vw,2rem); font-family: 'Fraunces',serif; margin-bottom: 8px; }
+.cc-desc { color: rgba(255,255,255,0.65); max-width: 600px; }
+.cc-modules {
+  padding: 0 48px 48px;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); gap: 14px;
+}
+.cc-module {
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-sm); padding: 18px 20px;
+  display: flex; align-items: center; gap: 12px;
+  transition: var(--transition);
+}
+.cc-module:hover { background: rgba(255,255,255,0.1); transform: translateX(4px); }
+.cc-module i { color: var(--orange); font-size: 1.1rem; flex-shrink: 0; }
+.cc-module span { color: rgba(255,255,255,0.85); font-size: 0.88rem; font-weight: 600; }
+.cc-cta { padding: 0 48px 48px; }
+
+/* ==============================
+   IELTS MODULES
+============================== */
+#ielts { background: var(--off-white); }
+.ielts-modules-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; }
+.ielts-module-card {
+  background: white; border-radius: var(--radius-md);
+  padding: 32px; box-shadow: var(--shadow-card);
+  border-left: 4px solid transparent;
+  transition: var(--transition);
+}
+.ielts-module-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.ielts-module-card:nth-child(1) { border-left-color: var(--sky); }
+.ielts-module-card:nth-child(2) { border-left-color: var(--orange); }
+.ielts-module-card:nth-child(3) { border-left-color: var(--amber); }
+.ielts-module-card:nth-child(4) { border-left-color: #9C27B0; }
+.imc-icon { font-size: 2rem; margin-bottom: 14px; }
+.imc-title { color: var(--navy); font-size: 1.15rem; margin-bottom: 8px; }
+.imc-desc { font-size: 0.88rem; margin-bottom: 16px; }
+.imc-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.imc-tag {
+  background: var(--light); color: var(--blue); font-size: 0.72rem; font-weight: 700;
+  padding: 4px 10px; border-radius: 100px;
+}
+.ielts-bands {
+  background: linear-gradient(135deg, var(--navy), var(--blue));
+  border-radius: var(--radius-lg); padding: 40px 48px; margin-top: 48px;
+  display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;
+}
+.ielts-bands-text h3 { color: white; font-size: 1.4rem; margin-bottom: 8px; }
+.ielts-bands-text p { color: rgba(255,255,255,0.65); }
+.bands-visual { display: flex; gap: 8px; align-items: flex-end; }
+.band-bar {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+}
+.band-bar-fill {
+  width: 36px; border-radius: 6px 6px 0 0;
+  background: linear-gradient(to top, rgba(255,255,255,0.2), rgba(255,255,255,0.5));
+}
+.band-bar-label { font-size: 0.7rem; color: rgba(255,255,255,0.6); font-weight: 700; }
+.band-bar-val { font-size: 0.8rem; color: white; font-weight: 800; }
+
+/* ==============================
+   SPOKEN ENGLISH
+============================== */
+#spoken { background: white; }
+.spoken-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.spoken-features { display: flex; flex-direction: column; gap: 20px; }
+.spoken-feature {
+  display: flex; gap: 20px; align-items: flex-start;
+  padding: 24px; background: var(--off-white); border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+.spoken-feature:hover { transform: translateX(8px); box-shadow: var(--shadow-card); }
+.sf-icon {
+  width: 48px; height: 48px; border-radius: 12px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
+}
+.sf-title { font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.sf-desc { font-size: 0.85rem; color: var(--slate); }
+.spoken-visual {
+  background: linear-gradient(135deg, #EBF5FF, #FFF3EC);
+  border-radius: var(--radius-lg); padding: 40px;
+  display: flex; flex-direction: column; gap: 20px; align-items: center;
+}
+.sv-icon-big { font-size: 5rem; }
+.spoken-benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; }
+.sb-item {
+  background: white; border-radius: var(--radius-sm);
+  padding: 16px; text-align: center;
+  box-shadow: 0 4px 16px rgba(11,31,74,0.08);
+}
+.sb-item i { font-size: 1.4rem; margin-bottom: 8px; display: block; }
+.sb-item span { font-size: 0.78rem; font-weight: 700; color: var(--navy); }
+
+/* ==============================
+   PHONICS
+============================== */
+#phonics {
+  background: linear-gradient(135deg, #FFF8F0, #F0F4FF);
+  position: relative; overflow: hidden;
+}
+.phonics-header { margin-bottom: 56px; }
+.phonics-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-bottom: 56px; }
+.phonics-card {
+  background: white; border-radius: var(--radius-md);
+  padding: 32px 24px; text-align: center;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition); position: relative; overflow: hidden;
+}
+.phonics-card::before {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 4px;
+}
+.phonics-card:nth-child(1)::before { background: #FF6B2B; }
+.phonics-card:nth-child(2)::before { background: var(--sky); }
+.phonics-card:nth-child(3)::before { background: var(--amber); }
+.phonics-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+.phonics-emoji { font-size: 3rem; margin-bottom: 16px; display: block; }
+.phonics-card h3 { color: var(--navy); margin-bottom: 8px; }
+.phonics-card p { font-size: 0.86rem; }
+.phonics-age-banner {
+  background: linear-gradient(135deg, var(--orange), #E55B1F);
+  border-radius: var(--radius-lg); padding: 40px 48px;
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 28px;
+}
+.pab-left h3 { color: white; font-size: 1.5rem; margin-bottom: 8px; }
+.pab-left p { color: rgba(255,255,255,0.8); }
+.pab-ages { display: flex; gap: 12px; flex-wrap: wrap; }
+.pab-age {
+  background: rgba(255,255,255,0.2); border: 2px solid rgba(255,255,255,0.35);
+  color: white; font-weight: 800; font-size: 0.9rem;
+  padding: 8px 18px; border-radius: 100px;
+}
+.phonics-activities { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-top: 48px; }
+.pa-item {
+  background: white; border-radius: var(--radius-sm); padding: 20px; text-align: center;
+  box-shadow: 0 4px 16px rgba(11,31,74,0.08); transition: var(--transition);
+}
+.pa-item:hover { transform: translateY(-4px); }
+.pa-item .emoji { font-size: 2rem; margin-bottom: 10px; display: block; }
+.pa-item span { font-size: 0.8rem; font-weight: 700; color: var(--navy); }
+
+/* ==============================
+   TESTIMONIALS
+============================== */
+#testimonials { background: var(--navy); overflow: hidden; }
+.testimonials-header .badge { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); }
+.testimonials-header .section-title { color: white; }
+.testimonials-header .section-sub { color: rgba(255,255,255,0.6); }
+.testimonials-track { display: flex; gap: 24px; transition: transform 0.5s cubic-bezier(0.4,0,0.2,1); }
+.testimonials-viewport { overflow: hidden; }
+.tcard {
+  min-width: 380px; flex-shrink: 0;
+  background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-md); padding: 32px;
+  backdrop-filter: blur(10px);
+}
+.tcard-stars { color: var(--amber); font-size: 0.9rem; margin-bottom: 16px; }
+.tcard-quote { color: rgba(255,255,255,0.8); font-size: 0.92rem; line-height: 1.7; margin-bottom: 24px; font-style: italic; }
+.tcard-author { display: flex; align-items: center; gap: 14px; }
+.tcard-avatar {
+  width: 46px; height: 46px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 1rem; color: white;
+}
+.tcard-name { color: white; font-weight: 700; font-size: 0.92rem; }
+.tcard-detail { color: rgba(255,255,255,0.5); font-size: 0.78rem; margin-top: 2px; }
+.tcard-band {
+  margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; gap: 8px;
+}
+.tcard-band-badge {
+  background: rgba(255,179,0,0.2); border: 1px solid rgba(255,179,0,0.3);
+  color: var(--amber); font-size: 0.75rem; font-weight: 800; padding: 4px 12px; border-radius: 100px;
+}
+.tcard-band span { color: rgba(255,255,255,0.5); font-size: 0.75rem; }
+.testimonials-controls { display: flex; gap: 12px; justify-content: center; margin-top: 36px; }
+.tc-btn {
+  width: 44px; height: 44px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.2);
+  background: transparent; color: white; cursor: pointer; transition: var(--transition);
+  display: flex; align-items: center; justify-content: center; font-size: 1rem;
+}
+.tc-btn:hover { background: var(--orange); border-color: var(--orange); }
+.testimonials-dots { display: flex; gap: 6px; align-items: center; margin-top: 20px; justify-content: center; }
+.tdot {
+  width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.25);
+  cursor: pointer; transition: var(--transition);
+}
+.tdot.active { width: 24px; border-radius: 4px; background: var(--orange); }
+
+/* ==============================
+   STATISTICS
+============================== */
+#stats { background: linear-gradient(135deg, var(--blue), var(--navy)); padding: 80px 0; }
+.stats-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 40px; }
+.stat-item { text-align: center; }
+.stat-num {
+  font-family: 'Fraunces', serif; font-size: clamp(2.5rem,4vw,3.5rem);
+  font-weight: 900; color: white; line-height: 1; margin-bottom: 8px;
+}
+.stat-num .plus { color: var(--orange); }
+.stat-label { font-size: 0.88rem; color: rgba(255,255,255,0.65); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+.stat-divider { width: 40px; height: 2px; background: rgba(255,255,255,0.2); margin: 10px auto; }
+
+/* ==============================
+   BATCH TIMINGS
+============================== */
+#batches { background: var(--off-white); }
+.batches-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.batch-card {
+  background: white; border-radius: var(--radius-md); overflow: hidden;
+  box-shadow: var(--shadow-card); transition: var(--transition);
+}
+.batch-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.bc-header {
+  padding: 24px 28px; color: white; position: relative; overflow: hidden;
+}
+.bc-header::after {
+  content: ''; position: absolute; right: -20px; top: -20px;
+  width: 100px; height: 100px; border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+}
+.bc-title { font-weight: 800; font-size: 1.1rem; margin-bottom: 4px; }
+.bc-mode { font-size: 0.78rem; opacity: 0.8; display: flex; align-items: center; gap: 6px; }
+.bc-body { padding: 24px 28px; }
+.bc-timings { display: flex; flex-direction: column; gap: 12px; }
+.bc-slot {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 14px; background: var(--off-white); border-radius: 8px;
+}
+.bc-slot-label { font-size: 0.8rem; font-weight: 700; color: var(--navy); }
+.bc-slot-time { font-size: 0.78rem; color: var(--slate); display: flex; align-items: center; gap: 4px; }
+.bc-slot-time i { color: var(--sky); }
+.bc-footer { padding: 0 28px 24px; }
+
+/* ==============================
+   FAQ
+============================== */
+#faq { background: white; }
+.faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+.faq-item {
+  background: var(--off-white); border-radius: var(--radius-sm);
+  border: 2px solid transparent; overflow: hidden; transition: var(--transition);
+}
+.faq-item.open { border-color: var(--sky); background: white; box-shadow: var(--shadow-card); }
+.faq-q {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 24px; cursor: pointer; gap: 12px;
+}
+.faq-q-text { font-weight: 700; font-size: 0.92rem; color: var(--navy); }
+.faq-toggle {
+  width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
+  background: var(--light); display: flex; align-items: center; justify-content: center;
+  transition: var(--transition); font-size: 0.75rem; color: var(--blue);
+}
+.faq-item.open .faq-toggle { background: var(--sky); color: white; transform: rotate(45deg); }
+.faq-a {
+  display: none; padding: 0 24px 20px;
+  font-size: 0.88rem; color: var(--slate); line-height: 1.7;
+}
+.faq-item.open .faq-a { display: block; }
+
+/* ==============================
+   CONTACT
+============================== */
+#contact { background: linear-gradient(135deg, var(--navy), #0d2d6e); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.contact-info .section-title { color: white; }
+.contact-info .section-sub { color: rgba(255,255,255,0.6); margin: 0 0 40px; }
+.contact-items { display: flex; flex-direction: column; gap: 20px; margin-bottom: 40px; }
+.ci-item { display: flex; align-items: flex-start; gap: 16px; }
+.ci-icon {
+  width: 48px; height: 48px; border-radius: 12px; flex-shrink: 0;
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15);
+  display: flex; align-items: center; justify-content: center; color: var(--orange); font-size: 1.1rem;
+}
+.ci-label { font-size: 0.75rem; color: rgba(255,255,255,0.5); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.ci-value { color: white; font-weight: 700; margin-top: 2px; }
+.contact-socials { display: flex; gap: 12px; }
+.cs-btn {
+  width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2);
+  display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.7);
+  font-size: 1rem; transition: var(--transition);
+}
+.cs-btn:hover { background: var(--orange); border-color: var(--orange); color: white; }
+/* FORM */
+.contact-form {
+  background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(20px); border-radius: var(--radius-lg); padding: 40px;
+}
+.form-title { color: white; font-size: 1.3rem; margin-bottom: 28px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { margin-bottom: 16px; }
+.form-label { display: block; color: rgba(255,255,255,0.7); font-size: 0.8rem; font-weight: 700; margin-bottom: 6px; }
+.form-control {
+  width: 100%; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px; padding: 12px 16px; color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.9rem; transition: var(--transition);
+}
+.form-control::placeholder { color: rgba(255,255,255,0.35); }
+.form-control:focus { outline: none; border-color: var(--sky); background: rgba(255,255,255,0.12); }
+select.form-control option { background: var(--navy); color: white; }
+textarea.form-control { resize: vertical; min-height: 100px; }
+
+/* ==============================
+   MAP
+============================== */
+#map-section { background: var(--off-white); }
+.map-wrapper { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); }
+.map-wrapper iframe { width: 100%; height: 420px; display: block; border: none; }
+
+/* ==============================
+   FOOTER
+============================== */
+footer { background: #060F28; padding: 80px 0 0; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+.footer-brand .logo { margin-bottom: 16px; }
+.footer-about { color: rgba(255,255,255,0.5); font-size: 0.85rem; line-height: 1.8; margin-bottom: 24px; }
+.footer-contact-quick a { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.6); font-size: 0.82rem; margin-bottom: 8px; transition: var(--transition); }
+.footer-contact-quick a:hover { color: var(--orange); }
+.footer-contact-quick a i { color: var(--orange); width: 14px; }
+.footer-col h4 { color: white; font-size: 0.88rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 20px; }
+.footer-links { display: flex; flex-direction: column; gap: 10px; }
+.footer-links a { color: rgba(255,255,255,0.5); font-size: 0.84rem; transition: var(--transition); }
+.footer-links a:hover { color: var(--orange); padding-left: 4px; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 24px 0;
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+}
+.footer-copy { color: rgba(255,255,255,0.35); font-size: 0.8rem; }
+.footer-copy span { color: var(--orange); }
+.footer-badges { display: flex; gap: 12px; }
+.footer-badge {
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px; padding: 4px 10px; color: rgba(255,255,255,0.4); font-size: 0.72rem; font-weight: 700;
+}
+
+/* ==============================
+   FLOATING BUTTONS
+============================== */
+.wa-float {
+  position: fixed; bottom: 28px; right: 28px; z-index: 900;
+}
+.wa-btn {
+  width: 60px; height: 60px; border-radius: 50%;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-size: 1.6rem;
+  box-shadow: 0 6px 24px rgba(37,211,102,0.5);
+  transition: var(--transition); cursor: pointer;
+  animation: pulse-wa 2.5s infinite;
+}
+.wa-btn:hover { transform: scale(1.1); box-shadow: 0 10px 32px rgba(37,211,102,0.6); }
+.wa-label {
+  position: absolute; right: 70px; top: 50%; transform: translateY(-50%);
+  background: white; color: var(--navy); font-size: 0.78rem; font-weight: 700;
+  padding: 6px 12px; border-radius: 100px; box-shadow: var(--shadow-card);
+  white-space: nowrap; pointer-events: none;
+  opacity: 0; transition: opacity 0.3s;
+}
+.wa-float:hover .wa-label { opacity: 1; }
+@keyframes pulse-wa {
+  0%,100% { box-shadow: 0 6px 24px rgba(37,211,102,0.5); }
+  50% { box-shadow: 0 6px 36px rgba(37,211,102,0.8); }
+}
+
+/* ==============================
+   SCROLL ANIMATIONS
+============================== */
+.reveal {
+  opacity: 0; transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-left {
+  opacity: 0; transform: translateX(-32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal-left.visible { opacity: 1; transform: translateX(0); }
+.reveal-right {
+  opacity: 0; transform: translateX(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal-right.visible { opacity: 1; transform: translateX(0); }
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 48px; text-align: center; }
+  .hero-cta { justify-content: center; }
+  .hero-stats { justify-content: center; }
+  .hero-desc { margin: 0 auto 36px; }
+  .hero-visual { display: none; }
+  .about-grid, .spoken-grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-visual { max-width: 400px; margin: 0 auto; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .stats-grid { grid-template-columns: repeat(2,1fr); gap: 32px; }
+}
+@media (max-width: 768px) {
+  .section-pad { padding: 70px 0; }
+  .nav-links, .nav-phone { display: none; }
+  .hamburger { display: flex; }
+  .why-grid { grid-template-columns: 1fr; }
+  .ielts-modules-grid { grid-template-columns: 1fr; }
+  .phonics-grid { grid-template-columns: 1fr; }
+  .phonics-activities { grid-template-columns: repeat(2,1fr); }
+  .batches-grid { grid-template-columns: 1fr; }
+  .faq-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-col { display: none; }
+  .footer-col.show-mobile { display: block; }
+  .form-row { grid-template-columns: 1fr; }
+  .cc-header { flex-direction: column; padding: 32px; }
+  .cc-modules { padding: 0 32px 32px; }
+  .cc-cta { padding: 0 32px 32px; }
+  .ielts-bands { padding: 28px; text-align: center; flex-direction: column; }
+  .bands-visual { justify-content: center; }
+  .phonics-age-banner { padding: 28px; text-align: center; flex-direction: column; align-items: center; }
+  .stats-grid { grid-template-columns: repeat(2,1fr); }
+  .hero-stats { gap: 20px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  .hero-cta { flex-direction: column; align-items: center; }
+  .btn { width: 100%; justify-content: center; }
+  .hero-stats { flex-wrap: wrap; justify-content: center; gap: 16px; }
+  .courses-tabs { gap: 6px; }
+  .ctab { padding: 8px 16px; font-size: 0.82rem; }
+  .tcard { min-width: calc(100vw - 48px); }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .phonics-activities { grid-template-columns: repeat(2,1fr); }
+  .spoken-benefits { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ==============================
+   NAVBAR
+============================== -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">A</div>
+        <div class="logo-text">
+          <div class="logo-name">Arpita Classes</div>
+          <div class="logo-tag">206,The Emperor, <br>opp sukh sagar party plot, <br>Nadiad, Gujarat • Est. 2009</div>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#ielts">IELTS</a>
+        <a href="#phonics">Phonics</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#batches">Batches</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="tel:+919998855440" class="nav-phone">
+          <i class="fas fa-phone"></i>+91 99988 55440
+        </a>
+        <a href="#contact" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.85rem;">Free Demo</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" onclick="toggleMenu()"><i class="fas fa-times"></i></button>
+  <a href="#about" onclick="toggleMenu()">About Us</a>
+  <a href="#courses" onclick="toggleMenu()">Courses</a>
+  <a href="#ielts" onclick="toggleMenu()">IELTS Coaching</a>
+  <a href="#spoken" onclick="toggleMenu()">Spoken English</a>
+  <a href="#phonics" onclick="toggleMenu()">Phonics for Kids</a>
+  <a href="#batches" onclick="toggleMenu()">Batch Timings</a>
+  <a href="#testimonials" onclick="toggleMenu()">Reviews</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+  <a href="tel:+919998855440" class="btn btn-primary" onclick="toggleMenu()"><i class="fas fa-phone"></i> Call Now</a>
+</div>
+
+<!-- ==============================
+   HERO
+============================== -->
+<section id="hero">
+  <div class="hero-bg-shapes">
+    <div class="hero-circle hero-circle-1"></div>
+    <div class="hero-circle hero-circle-2"></div>
+    <div class="hero-dots"></div>
+  </div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-label">
+          <i class="fas fa-star"></i>
+          15+ Years of Excellence in Nadiad, Gujarat
+        </div>
+        <h1 class="hero-title display">
+          <span>Unlock Your</span>
+          <span class="highlight">Global Future</span>
+          <span>with Arpita Classes</span>
+        </h1>
+        <p class="hero-desc">
+          Gujarat's most trusted IELTS coaching, Spoken English, and Phonics institute. Real results, expert faculty, and personalised guidance — online & offline.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-calendar-check"></i>Book a Free Demo Class
+          </a>
+          <a href="#courses" class="btn btn-outline">
+            <i class="fas fa-play-circle"></i>Explore Courses
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <div class="hero-stat-num"><span id="h-students">0</span><span>+</span></div>
+            <div class="hero-stat-label">Students Trained</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-num"><span id="h-band">0</span><span>+</span></div>
+            <div class="hero-stat-label">Band 7 Achievers</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-num"><span id="h-years">0</span><span>+</span></div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-num" style="color: var(--amber);">4.9<span style="font-size:1rem;color:var(--amber);">★</span></div>
+            <div class="hero-stat-label">Google Rating</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-illustration">
+          <div class="hero-main-card">
+            <div class="hero-icon-grid">
+              <div class="hero-icon-box">
+                <i class="fas fa-headphones-alt" style="color:#60B4FF;"></i>
+                <span>Listening</span>
+              </div>
+              <div class="hero-icon-box">
+                <i class="fas fa-book-open" style="color:#FF9E70;"></i>
+                <span>Reading</span>
+              </div>
+              <div class="hero-icon-box">
+                <i class="fas fa-pen-nib" style="color:#A78BFA;"></i>
+                <span>Writing</span>
+              </div>
+              <div class="hero-icon-box">
+                <i class="fas fa-microphone" style="color:#34D399;"></i>
+                <span>Speaking</span>
+              </div>
+              <div class="hero-icon-box">
+                <i class="fas fa-comments" style="color:#F472B6;"></i>
+                <span>English</span>
+              </div>
+              <div class="hero-icon-box">
+                <i class="fas fa-child" style="color:#FCD34D;"></i>
+                <span>Phonics</span>
+              </div>
+            </div>
+            <div class="hero-card-badge">
+              <i class="fas fa-certificate"></i>
+              IELTS • Spoken English • Phonics  • Interview Preparation 
+            </div>
+          </div>
+          <div class="hero-float-badge hero-float-badge-1">
+            <div class="fhb-icon" style="background: linear-gradient(135deg,#FFB30022,#FF6B2B22);">🏆</div>
+            <div>
+              <div class="fhb-num">Band 7</div>
+              <div class="fhb-label">Top Score This Year</div>
+            </div>
+          </div>
+          
+          
+            <div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+   ABOUT
+============================== -->
+<section id="about" class="section-pad">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal-left">
+        <div class="about-img-frame">
+          <div class="about-img-inner">
+            <div style="text-align:center;">
+              <div style="font-size:4rem;margin-bottom:16px;">👩‍🏫</div>
+              <div style="color:white;font-family:'Fraunces',serif;font-size:1.4rem;font-weight:900;margin-bottom:8px;">Expert-Led Learning</div>
+              <div style="color:rgba(255,255,255,0.6);font-size:0.85rem;">Guided by experienced IELTS-certified trainers</div>
+            </div>
+            <div class="about-img-stat">
+              <div class="about-img-stat-num">15<sup>+</sup></div>
+              <div class="about-img-stat-label">Years of Teaching Excellence</div>
+            </div>
+            <div class="about-img-stat">
+              <div class="about-img-stat-num">5000<sup>+</sup></div>
+              <div class="about-img-stat-label">Students Transformed</div>
+            </div>
+            <i class="fas fa-graduation-cap about-big-icon" style="color:rgba(255,255,255,1);"></i>
+          </div>
+        </div>
+        <div class="about-float">
+          <div class="about-float-num">100%</div>
+          <div class="about-float-label">Personalised Attention</div>
+        </div>
+      </div>
+      <div class="about-content reveal-right">
+        <div class="badge"><i class="fas fa-info-circle"></i> About Us</div>
+        <h2 class="section-title display">Nadiad's Premier<br><span class="grad">Language Institute</span></h2>
+        <p class="about-text">Founded with a passion for unlocking students' global potential, Arpita Classes has been a trusted name in Nadiad for over 15 years. We combine proven teaching methodologies with personalised attention to help every student achieve their best results.</p>
+        <p class="about-text">From young learners discovering the world of phonics to working professionals targeting IELTS Band 7+, our programs are designed to deliver real, measurable outcomes.</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="af-icon" style="background:linear-gradient(135deg,#EBF5FF,#DBEAFE);">
+              <i class="fas fa-chalkboard-teacher" style="color:var(--blue);"></i>
+            </div>
+            <div>
+              <div class="af-title">IELTS-Certified Expert Trainers</div>
+              <div class="af-desc">Our faculty hold internationally recognised certifications and bring years of coaching experience.</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="af-icon" style="background:linear-gradient(135deg,#FFF3EC,#FFEDD5);">
+              <i class="fas fa-laptop" style="color:var(--orange);"></i>
+            </div>
+            <div>
+              <div class="af-title">Online & Offline Flexibility</div>
+              <div class="af-desc">Choose the format that suits your schedule — live online sessions or in-person classroom learning.</div>
+            </div>
+          </div>
+          
+          <div class="about-feature">
+            <div class="af-icon" style="background:linear-gradient(135deg,#F0FFF4,#DCFCE7);">
+              <i class="fas fa-chart-line" style="color:#16A34A;"></i>
+            </div>
+            <div>
+              <div class="af-title">Proven Results, Year After Year</div>
+              <div class="af-desc">Hundreds of students achieve Band 6+ annually, and thousands have mastered confident English communication.</div>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-calendar-alt"></i>Book Free Demo</a>
+          <a href="tel:+919998855440" class="btn btn-navy"><i class="fas fa-phone"></i>Call Us Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+   WHY CHOOSE US
+============================== -->
+<section id="why" class="section-pad">
+  <div class="container">
+    <div class="text-center">
+      <div class="badge"><i class="fas fa-trophy"></i> Why Choose Us</div>
+      <h2 class="section-title display">What Makes Arpita Classes<br><span class="grad">Different</span></h2>
+      <p class="section-sub">We don't just teach — we transform. Here's why thousands of students in Gujarat choose us for their language learning journey.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal delay-1">
+        <div class="why-icon"><i class="fas fa-user-graduate" style="color:var(--blue);"></i></div>
+        <h3>Certified & Experienced Faculty</h3>
+        <p>All our trainers are IELTS-certified professionals with a minimum of 5 years of coaching experience, ensuring you learn from the best.</p>
+      </div>
+      <div class="why-card reveal delay-2">
+        <div class="why-icon"><i class="fas fa-flask" style="color:var(--orange);"></i></div>
+        <h3>Full-Length Mock Tests</h3>
+        <p>Realistic, exam-condition mock tests that mirror actual IELTS papers, with detailed band-wise feedback to identify and close your weak areas.</p>
+      </div>
+      <div class="why-card reveal delay-3">
+        <div class="why-icon"><i class="fas fa-users-cog" style="color:#9C27B0;"></i></div>
+        <h3>Small Batch Sizes</h3>
+        <p>We cap batches at 12 students to ensure every learner gets personalised attention, active speaking time, and detailed written feedback.</p>
+      </div>
+      <div class="why-card reveal delay-1">
+        <div class="why-icon"><i class="fas fa-globe" style="color:#16A34A;"></i></div>
+        <h3>Online & Offline Classes</h3>
+        <p>Join us in our Nadiad classroom or attend live interactive sessions from anywhere in India or abroad — same quality, your choice.</p>
+      </div>
+      <div class="why-card reveal delay-2">
+        <div class="why-icon"><i class="fas fa-book" style="color:var(--amber);"></i></div>
+        <h3>Comprehensive Study Material</h3>
+        <p>Curated worksheets, vocabulary lists, grammar guides, writing templates, and speaking topic banks — everything you need in one place.</p>
+      </div>
+      <div class="why-card reveal delay-3">
+        <div class="why-icon"><i class="fas fa-headset" style="color:#EF4444;"></i></div>
+        <h3>Ongoing Mentor Support</h3>
+        <p>Doubt-clearing WhatsApp support and 1-on-1 performance reviews so you never feel stuck between classes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+   COURSES
+============================== -->
+<section id="courses" class="section-pad">
+  <div class="container">
+    <div class="text-center courses-header">
+      <div class="badge"><i class="fas fa-book-open"></i> Our Courses</div>
+      <h2 class="section-title display">Programs Designed<br>for <span class="grad">Real Success</span></h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.6);">Three flagship programs, each expertly crafted to meet the specific needs of our learners — from school children to working professionals.</p>
+    </div>
+    <div class="courses-tabs">
+      <button class="ctab active" onclick="showCourse('ielts',this)">🎯 IELTS Coaching</button>
+      <button class="ctab" onclick="showCourse('spoken',this)">🗣️ Spoken English</button>
+      <button class="ctab" onclick="showCourse('phonics',this)">🔤 Phonics for Kids</button>
+    </div>
+    <div id="course-ielts" class="course-panel active reveal">
+      <div class="course-card">
+        <div class="cc-header">
+          <div class="cc-icon-big" style="background:linear-gradient(135deg,#1565C022,#2196F322);">
+            <span style="font-size:2.5rem;">🎯</span>
+          </div>
+          <div>
+            <div class="cc-title">IELTS Coaching</div>
+            <p class="cc-desc">Comprehensive IELTS preparation for Academic and General Training pathways. Our structured program covers all four modules with proven strategies to achieve Band 7 and above.</p>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;">
+              <span style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);padding:4px 12px;border-radius:100px;font-size:0.78rem;font-weight:700;">Academic IELTS</span>
+              <span style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);padding:4px 12px;border-radius:100px;font-size:0.78rem;font-weight:700;">General Training</span>
+              <span style="background:rgba(255,107,43,0.2);color:#FFAB87;padding:4px 12px;border-radius:100px;font-size:0.78rem;font-weight:700;">Band 7+ Guarantee</span>
+            </div>
+          </div>
+        </div>
+        <div class="cc-modules">
+          <div class="cc-module"><i class="fas fa-headphones-alt"></i><span>Listening Strategies</span></div>
+          <div class="cc-module"><i class="fas fa-book-reader"></i><span>Reading Techniques</span></div>
+          <div class="cc-module"><i class="fas fa-pen-nib"></i><span>Task 1 & Task 2 Writing</span></div>
+          <div class="cc-module"><i class="fas fa-microphone-alt"></i><span>Speaking (Part 1,2,3)</span></div>
+          <div class="cc-module"><i class="fas fa-clipboard-check"></i><span>Full Mock Tests</span></div>
+          <div class="cc-module"><i class="fas fa-chart-bar"></i><span>Band Analysis & Review</span></div>
+          <div class="cc-module"><i class="fas fa-spell-check"></i><span>Grammar & Vocabulary</span></div>
+          <div class="cc-module"><i class="fas fa-clock"></i><span>Time Management Skills</span></div>
+        </div>
+        <div class="cc-cta">
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-calendar-check"></i>Book Free IELTS Demo</a>
+        </div>
+      </div>
+    </div>
+    <div id="course-spoken" class="course-panel reveal">
+      <div class="course-card">
+        <div class="cc-header">
+          <div class="cc-icon-big" style="background:linear-gradient(135deg,#FF6B2B22,#FFB30022);">
+            <span style="font-size:2.5rem;">🗣️</span>
+          </div>
+          <div>
+            <div class="cc-title">Spoken English Classes</div>
+            <p class="cc-desc">Build unshakeable confidence in English communication. Our Spoken English program is designed for students, job seekers, and professionals who want to express themselves clearly and confidently.</p>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;">
+              <span style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);padding:4px 12px;border-radius:100px;font-size:0.78rem;font-weight:700;">Beginners to Advanced</span>
+              <span style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);padding:4px 12px;border-radius:100px;font-size:0.78rem;font-weight:700;">Interview Ready</span>
+            </div>
+          </div>
+        </div>
+        <div class="cc-modules">
+          <div class="cc-module"><i class="fas fa-comments"></i><span>Daily Communication</span></div>
+          <div class="cc-module"><i class="fas fa-book"></i><span>Grammar Mastery</span></div>
+          <div class="cc-module"><i class="fas fa-language"></i><span>Vocabulary Building</span></div>
+          <div class="cc-module"><i class="fas fa-volume-up"></i><span>Pronunciation & Accent</span></div>
+          <div class="cc-module"><i class="fas fa-briefcase"></i><span>Interview Preparation</span></div>
+          <div class="cc-module"><i class="fas fa-users"></i><span>Group Discussions</span></div>
+          <div class="cc-module"><i class="fas fa-video"></i><span>Presentation Skills</span></div>
+          <div class="cc-module"><i class="fas fa-pen"></i><span>Email & Business Writing</span></div>
+        </div>
+        <div class="cc-cta">
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-calendar-check"></i>Book Free English Demo</a>
+        </div>
+      </div>
+    </div>
+    <div id="course-phonics" class="course-panel reveal">
+      <div class="course-card">
+        <div class="cc-header">
+          <div class="cc-icon-big" style="background:linear-gradient(135deg,#FFB30022,#FF6B2B22);">
+            <span style="font-size:2.5rem;">🔤</span>
+          </div>
+          <div>
+            <div class="cc-title">Phonics Program for Children</div>
+            <p class="cc-desc">A structured, play-based phonics program for children aged 3–10. We build strong reading foundations, correct pronunciation, and a lifelong love for the English language through interactive and engaging activities.</p>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;">
+              <span style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);padding:4px 12px;border-radius:100px;font-size:0.78rem;font-weight:700;">Age 3–10 Years</span>
+              <span style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);padding:4px 12px;border-radius:100px;font-size:0.78rem;font-weight:700;">Play-Based Learning</span>
+              <span style="background:rgba(255,179,0,0.2);color:var(--amber);padding:4px 12px;border-radius:100px;font-size:0.78rem;font-weight:700;">Fun & Interactive</span>
+            </div>
+          </div>
+        </div>
+        <div class="cc-modules">
+          <div class="cc-module"><i class="fas fa-letter-a fa-font"></i><span>Letter Sounds (A–Z)</span></div>
+          <div class="cc-module"><i class="fas fa-blending-tool fa-layer-group"></i><span>Blending & Segmenting</span></div>
+          <div class="cc-module"><i class="fas fa-book-open"></i><span>Sight Word Reading</span></div>
+          <div class="cc-module"><i class="fas fa-microphone"></i><span>Clear Pronunciation</span></div>
+          <div class="cc-module"><i class="fas fa-puzzle-piece"></i><span>Vocabulary Activities</span></div>
+          <div class="cc-module"><i class="fas fa-music"></i><span>Rhymes & Songs</span></div>
+          <div class="cc-module"><i class="fas fa-pencil-alt"></i><span>Pre-Reading Skills</span></div>
+          <div class="cc-module"><i class="fas fa-star"></i><span>Confidence Building</span></div>
+        </div>
+        <div class="cc-cta">
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-calendar-check"></i>Book Free Phonics Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+   IELTS MODULES
+============================== -->
+<section id="ielts" class="section-pad">
+  <div class="container">
+    <div class="text-center">
+      <div class="badge"><i class="fas fa-graduation-cap"></i> IELTS Mastery</div>
+      <h2 class="section-title display">Complete IELTS<br><span class="grad">Module Training</span></h2>
+      <p class="section-sub">We leave no stone unturned. Our IELTS program systematically builds your skills across all four modules with targeted strategies proven to boost your band score.</p>
+    </div>
+    <div class="ielts-modules-grid">
+      <div class="ielts-module-card reveal delay-1">
+        <div class="imc-icon">🎧</div>
+        <h3 class="imc-title">Listening</h3>
+        <p class="imc-desc">Develop sharp listening accuracy with 4 sections of practice — conversations, monologues, and academic lectures. Learn to identify keywords, avoid common traps, and manage time under exam conditions.</p>
+        <div class="imc-tags">
+          <span class="imc-tag">Note Completion</span>
+          <span class="imc-tag">MCQs</span>
+          <span class="imc-tag">Map Labelling</span>
+          <span class="imc-tag">Form Filling</span>
+        </div>
+      </div>
+      <div class="ielts-module-card reveal delay-2">
+        <div class="imc-icon">📖</div>
+        <h3 class="imc-title">Reading</h3>
+        <p class="imc-desc">Master skimming, scanning, and careful reading techniques. We train you on Academic and General passages to decode complex texts, identify writer's opinions, and answer within tight time limits.</p>
+        <div class="imc-tags">
+          <span class="imc-tag">True/False/NG</span>
+          <span class="imc-tag">Matching Headings</span>
+          <span class="imc-tag">Summary Completion</span>
+        </div>
+      </div>
+      <div class="ielts-module-card reveal delay-3">
+        <div class="imc-icon">✍️</div>
+        <h3 class="imc-title">Writing</h3>
+        <p class="imc-desc">Craft high-scoring Task 1 reports (graphs, charts, diagrams) and Task 2 essays with strong arguments, correct cohesion, and examiner-approved vocabulary. Includes personalised written feedback on every draft.</p>
+        <div class="imc-tags">
+          <span class="imc-tag">Task 1 — Academic</span>
+          <span class="imc-tag">Task 1 — General</span>
+          <span class="imc-tag">Task 2 Essays</span>
+        </div>
+      </div>
+      <div class="ielts-module-card reveal delay-4">
+        <div class="imc-icon">🎤</div>
+        <h3 class="imc-title">Speaking</h3>
+        <p class="imc-desc">Gain fluency and examiner-facing confidence through structured Part 1, 2, and 3 practice. We focus on coherence, lexical range, and pronunciation — so you shine on test day.</p>
+        <div class="imc-tags">
+          <span class="imc-tag">Part 1 — Introduction</span>
+          <span class="imc-tag">Part 2 — Cue Card</span>
+          <span class="imc-tag">Part 3 — Discussion</span>
+        </div>
+      </div>
+    </div>
+    <div class="ielts-bands reveal">
+      <div class="ielts-bands-text">
+        <h3>Our Students Achieve Band 6 to 7</h3>
+        <p>The majority of our students who complete the full program achieve their target band score within their first or second attempt.</p>
+        <a href="#contact" class="btn btn-primary" style="margin-top:20px;"><i class="fas fa-rocket"></i>Start Your IELTS Journey</a>
+      </div>
+      <div class="bands-visual">
+        <div class="band-bar">
+          <div class="band-bar-val">5</div>
+          <div class="band-bar-fill" style="height:40px;"></div>
+          <div class="band-bar-label">Band 5</div>
+        </div>
+        <div class="band-bar">
+          <div class="band-bar-val">6</div>
+          <div class="band-bar-fill" style="height:70px;"></div>
+          <div class="band-bar-label">Band 6</div>
+        </div>
+        <div class="band-bar">
+          <div class="band-bar-val">7</div>
+          <div class="band-bar-fill" style="height:110px;background:linear-gradient(to top, rgba(255,107,43,0.4), rgba(255,179,0,0.6));"></div>
+          <div class="band-bar-label">Band 7</div>
+        </div>
+        <div class="band-bar">
+          <div class="band-bar-val">7.5</div>
+          <div class="band-bar-fill" style="height:130px;background:linear-gradient(to top, rgba(255,107,43,0.5), rgba(255,179,0,0.8));"></div>
+          <div class="band-bar-label">Band 7.5</div>
+        </div>
+        <div class="band-bar">
+          <div class="band-bar-val">8+</div>
+          <div class="band-bar-fill" style="height:155px;background:linear-gradient(to top, var(--orange), var(--amber));"></div>
+          <div class="band-bar-label">Band 8+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+   SPOKEN ENGLISH
+============================== -->
+<section id="spoken" class="section-pad">
+  <div class="container">
+    <div class="spoken-grid">
+      <div class="reveal-left">
+        <div class="badge"><i class="fas fa-comments"></i> Spoken English</div>
+        <h2 class="section-title display">Speak English with<br><span class="grad">Real Confidence</span></h2>
+        <p style="margin-bottom:28px;">Our Spoken English program goes beyond grammar drills. We create real conversation situations, simulate job interviews, and practise public speaking so you can communicate naturally in any setting.</p>
+        <div class="spoken-features">
+          <div class="spoken-feature">
+            <div class="sf-icon" style="background:linear-gradient(135deg,#EBF5FF,#DBEAFE);">
+              <i class="fas fa-comments" style="color:var(--blue);"></i>
+            </div>
+            <div>
+              <div class="sf-title">Everyday Communication Skills</div>
+              <div class="sf-desc">Express thoughts clearly in personal, academic, and professional contexts.</div>
+            </div>
+          </div>
+          <div class="spoken-feature">
+            <div class="sf-icon" style="background:linear-gradient(135deg,#FFF3EC,#FFEDD5);">
+              <i class="fas fa-spell-check" style="color:var(--orange);"></i>
+            </div>
+            <div>
+              <div class="sf-title">Grammar Without Fear</div>
+              <div class="sf-desc">Learn practical grammar rules through conversation, not rote memorisation.</div>
+            </div>
+          </div>
+          <div class="spoken-feature">
+            <div class="sf-icon" style="background:linear-gradient(135deg,#F0FFF4,#DCFCE7);">
+              <i class="fas fa-briefcase" style="color:#16A34A;"></i>
+            </div>
+            <div>
+              <div class="sf-title">Interview & Career Preparation</div>
+              <div class="sf-desc">Mock interviews, HR question practice, and professional email writing for job-ready confidence.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="spoken-visual">
+          <div class="sv-icon-big">🗣️</div>
+          <div style="text-align:center;">
+            <h3 style="color:var(--navy);margin-bottom:8px;">What You'll Gain</h3>
+            <p style="font-size:0.85rem;margin-bottom:24px;">Skills that open doors in education, careers, and life.</p>
+          </div>
+          <div class="spoken-benefits">
+            <div class="sb-item"><i class="fas fa-microphone" style="color:var(--blue);"></i><span>Fluent Speaking</span></div>
+            <div class="sb-item"><i class="fas fa-book" style="color:var(--orange);"></i><span>Rich Vocabulary</span></div>
+            <div class="sb-item"><i class="fas fa-volume-up" style="color:#9C27B0;"></i><span>Clear Accent</span></div>
+            <div class="sb-item"><i class="fas fa-star" style="color:var(--amber);"></i><span>High Confidence</span></div>
+            <div class="sb-item"><i class="fas fa-pen" style="color:#16A34A;"></i><span>Written Skills</span></div>
+            <div class="sb-item"><i class="fas fa-handshake" style="color:#EF4444;"></i><span>Interview Ready</span></div>
+          </div>
+          <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;">
+            <i class="fas fa-calendar-check"></i>Book Free Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+   PHONICS
+============================== -->
+<section id="phonics" class="section-pad">
+  <div class="container">
+    <div class="text-center phonics-header">
+      <div class="badge"><i class="fas fa-child"></i> For Young Learners</div>
+      <h2 class="section-title display">Phonics Program<br><span class="grad">for Children (Age 3–10)</span></h2>
+      <p class="section-sub">Give your child the gift of reading. Our play-based phonics program builds a strong English foundation through songs, stories, games, and guided practice.</p>
+    </div>
+    <div class="phonics-grid">
+      <div class="phonics-card reveal delay-1">
+        <span class="phonics-emoji">📚</span>
+        <h3>Reading Skills</h3>
+        <p>From letter sounds to reading full sentences — we guide each child at their own pace using proven phonemic awareness techniques.</p>
+      </div>
+      <div class="phonics-card reveal delay-2">
+        <span class="phonics-emoji">🔊</span>
+        <h3>Pronunciation & Accent</h3>
+        <p>Correct early mispronunciations before they become habits. Children develop clear, natural English pronunciation from the very beginning.</p>
+      </div>
+      <div class="phonics-card reveal delay-3">
+        <span class="phonics-emoji">🧩</span>
+        <h3>Interactive Learning</h3>
+        <p>Games, rhymes, stories, and flashcard activities keep young learners engaged and make phonics genuinely fun to learn.</p>
+      </div>
+    </div>
+    <div class="phonics-age-banner reveal">
+      <div class="pab-left">
+        <h3>Tailored for Every Age Group</h3>
+        <p>Our curriculum adapts to each child's developmental stage for maximum impact.</p>
+      </div>
+      <div class="pab-ages">
+        <div class="pab-age">🌟 3–5 yrs</div>
+        <div class="pab-age">📖 5–7 yrs</div>
+        <div class="pab-age">🚀 7–10 yrs</div>
+      </div>
+      <a href="#contact" class="btn" style="background:white;color:var(--orange);font-weight:800;">
+        <i class="fas fa-child"></i>Enrol Your Child
+      </a>
+    </div>
+    <div class="phonics-activities">
+      <div class="pa-item reveal delay-1"><span class="emoji">🎵</span><span>Phonics Songs</span></div>
+      <div class="pa-item reveal delay-2"><span class="emoji">🃏</span><span>Flashcard Games</span></div>
+      <div class="pa-item reveal delay-3"><span class="emoji">📝</span><span>Tracing Sheets</span></div>
+      <div class="pa-item reveal delay-4"><span class="emoji">📖</span><span>Story Reading</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+   TESTIMONIALS
+============================== -->
+<section id="testimonials" class="section-pad">
+  <div class="container">
+    <div class="text-center testimonials-header" style="margin-bottom:48px;">
+      <div class="badge"><i class="fas fa-star"></i> Student Stories</div>
+      <h2 class="section-title display">Real Students,<br><span class="grad">Real Results</span></h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.6);">Over 5,000 students have achieved their goals with Arpita Classes. Here's what some of them have to say.</p>
+    </div>
+    <div class="testimonials-viewport">
+      <div class="testimonials-track" id="testimonialsTrack">
+        <div class="tcard">
+          <div class="tcard-stars">★★★★★</div>
+          <p class="tcard-quote">"I was scoring Band 6 in my practice tests and felt stuck. After just 2 months at Arpita Classes, I achieved Band 7.5 in my official exam. The writing feedback was invaluable — teacher literally transformed how I structure my essays."</p>
+          <div class="tcard-author">
+            <div class="tcard-avatar" style="background:linear-gradient(135deg,var(--blue),var(--sky));">P</div>
+            <div>
+              <div class="tcard-name">Priya Mehta</div>
+              <div class="tcard-detail">Canada PR Applicant · Nadiad</div>
+            </div>
+          </div>
+          <div class="tcard-band">
+            <span class="tcard-band-badge">Band 7.5</span>
+            <span>Academic IELTS · First Attempt</span>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="tcard-stars">★★★★★</div>
+          <p class="tcard-quote">"My daughter struggled with reading at school. Within 3 months of the Phonics program, she is reading small books on her own! The teacher is incredibly patient and the sessions are so engaging that my daughter actually looks forward to class."</p>
+          <div class="tcard-author">
+            <div class="tcard-avatar" style="background:linear-gradient(135deg,var(--orange),#E55B1F);">R</div>
+            <div>
+              <div class="tcard-name">Ritu Patel</div>
+              <div class="tcard-detail">Mother of Ananya (Age 6) · Nadiad</div>
+            </div>
+          </div>
+          <div class="tcard-band">
+            <span class="tcard-band-badge" style="background:rgba(255,107,43,0.2);border-color:rgba(255,107,43,0.3);color:#FFAB87;">Phonics</span>
+            <span>Reading breakthrough in 3 months</span>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="tcard-stars">★★★★★</div>
+          <p class="tcard-quote">"I always felt nervous speaking English in office meetings. The Spoken English course changed everything. The mock interview sessions were especially helpful — I cleared my TCS HR round on the first try."</p>
+          <div class="tcard-author">
+            <div class="tcard-avatar" style="background:linear-gradient(135deg,#9C27B0,#7B1FA2);">A</div>
+            <div>
+              <div class="tcard-name">Arjun Shah</div>
+              <div class="tcard-detail">Software Engineer · Anand</div>
+            </div>
+          </div>
+          <div class="tcard-band">
+            <span class="tcard-band-badge" style="background:rgba(156,39,176,0.2);border-color:rgba(156,39,176,0.3);color:#CE93D8;">Spoken English</span>
+            <span>Got placed at TCS after the course</span>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="tcard-stars">★★★★★</div>
+          <p class="tcard-quote">"Appeared for IELTS for my Australia skilled migration. Needed Band 8 in Speaking and Writing — both seemed impossible to me. Arpita ma'am's speaking sessions and writing correction turned things around. I got 8.0 Speaking and 7.5 Writing. Miracle!"</p>
+          <div class="tcard-author">
+            <div class="tcard-avatar" style="background:linear-gradient(135deg,#16A34A,#15803D);">D</div>
+            <div>
+              <div class="tcard-name">Darshan Desai</div>
+              <div class="tcard-detail">Australia Migration · Kheda</div>
+            </div>
+          </div>
+          <div class="tcard-band">
+            <span class="tcard-band-badge">Band 8.0</span>
+            <span>Speaking · Australia PR Approved</span>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="tcard-stars">★★★★★</div>
+          <p class="tcard-quote">"My son used to refuse to read. After joining the Phonics program at age 5, he now reads bedtime stories himself! The activities, songs, and games made learning feel like play. We are so grateful for this wonderful program."</p>
+          <div class="tcard-author">
+            <div class="tcard-avatar" style="background:linear-gradient(135deg,var(--amber),#E65100);">S</div>
+            <div>
+              <div class="tcard-name">Smita Joshi</div>
+              <div class="tcard-detail">Mother of Veer (Age 5) · Nadiad</div>
+            </div>
+          </div>
+          <div class="tcard-band">
+            <span class="tcard-band-badge" style="background:rgba(255,107,43,0.2);border-color:rgba(255,107,43,0.3);color:#FFAB87;">Phonics</span>
+            <span>Independent reader at age 5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials-controls">
+      <button class="tc-btn" onclick="prevTestimonial()"><i class="fas fa-chevron-left"></i></button>
+      <button class="tc-btn" onclick="nextTestimonial()"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="testimonials-dots" id="testimonialsDotsContainer"></div>
+  </div>
+</section>
+
+<!-- ==============================
+   STATISTICS
+============================== -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-num"><span class="counter" data-target="5000">0</span><span class="plus">+</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-label">Students Trained</div>
+      </div>
+      <div class="stat-item reveal delay-1">
+        <div class="stat-num"><span class="counter" data-target="15">0</span><span class="plus">+</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-label">Years of Excellence</div>
+      </div>
+      <div class="stat-item reveal delay-2">
+        <div class="stat-num"><span class="counter" data-target="98">0</span><span class="plus">%</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-label">Success Rate</div>
+      </div>
+      <div class="stat-item reveal delay-3">
+        <div class="stat-num"><span class="counter" data-target="500">0</span><span class="plus">+</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-label">Band 7+ Achievers</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+   BATCH TIMINGS
+============================== -->
+<section id="batches" class="section-pad">
+  <div class="container">
+    <div class="text-center">
+      <div class="badge"><i class="fas fa-clock"></i> Batch Schedule</div>
+      <h2 class="section-title display">Flexible Batches to<br><span class="grad">Fit Your Schedule</span></h2>
+      <p class="section-sub">We offer multiple batch timings so you can learn without disrupting your studies or work. New batches start every month.</p>
+    </div>
+    <div class="batches-grid">
+      <div class="batch-card reveal delay-1">
+        <div class="bc-header" style="background:linear-gradient(135deg,var(--blue),var(--navy));">
+          <div class="bc-title">🎯 IELTS Coaching</div>
+          <div class="bc-mode"><i class="fas fa-map-marker-alt"></i> Offline + Online Available</div>
+        </div>
+        <div class="bc-body">
+          <div class="bc-timings">
+            <div class="bc-slot">
+              <span class="bc-slot-label">Morning Batch</span>
+              <span class="bc-slot-time"><i class="fas fa-sun"></i>9:00 AM – 11:00 AM</span>
+            </div>
+            <div class="bc-slot">
+              <span class="bc-slot-label">Afternoon Batch</span>
+              <span class="bc-slot-time"><i class="fas fa-cloud-sun"></i>11:00 AM – 2:00 PM</span>
+            </div>
+            <div class="bc-slot">
+              <span class="bc-slot-label">Evening Batch</span>
+              <span class="bc-slot-time"><i class="fas fa-moon"></i>:00 PM – 8:00 PM</span>
+            </div>
+            <div class="bc-slot">
+              <span class="bc-slot-label">Weekend Batch</span>
+              <span class="bc-slot-time"><i class="fas fa-calendar-week"></i>Saturday</span>
+            </div>
+          </div>
+        </div>
+        <div class="bc-footer"><a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;font-size:0.88rem;">Enquire Now</a></div>
+      </div>
+      <div class="batch-card reveal delay-2">
+        <div class="bc-header" style="background:linear-gradient(135deg,var(--orange),#C94E1A);">
+          <div class="bc-title">🗣️ Spoken English</div>
+          <div class="bc-mode"><i class="fas fa-map-marker-alt"></i> Offline + Online Available</div>
+        </div>
+        <div class="bc-body">
+          <div class="bc-timings">
+            <div class="bc-slot">
+              <span class="bc-slot-label">Morning Batch</span>
+              <span class="bc-slot-time"><i class="fas fa-sun"></i>9:00 AM – 10:30 AM</span>
+            </div>
+            <div class="bc-slot">
+              <span class="bc-slot-label">Afternoon Batch</span>
+              <span class="bc-slot-time"><i class="fas fa-cloud-sun"></i>2:00 PM – 3:30 PM</span>
+            </div>
+            <div class="bc-slot">
+              <span class="bc-slot-label">Evening Batch</span>
+              <span class="bc-slot-time"><i class="fas fa-moon"></i>4:30 PM – 6:00 PM</span>
+            </div>
+            <div class="bc-slot">
+              <span class="bc-slot-label">Weekend Batch</span>
+              <span class="bc-slot-time"><i class="fas fa-calendar-week"></i>Saturday: 9 AM – 12 PM</span>
+            </div>
+          </div>
+        </div>
+        <div class="bc-footer"><a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;font-size:0.88rem;">Enquire Now</a></div>
+      </div>
+      <div class="batch-card reveal delay-3">
+        <div class="bc-header" style="background:linear-gradient(135deg,#FFB300,#E65100);">
+          <div class="bc-title">🔤 Phonics for Kids</div>
+          <div class="bc-mode"><i class="fas fa-map-marker-alt"></i> Offline + Online Available</div>
+        </div>
+        <div class="bc-body">
+          <div class="bc-timings">
+            <div class="bc-slot">
+              <span class="bc-slot-label">Morning Batch</span>
+              <span class="bc-slot-time"><i class="fas fa-sun"></i>9:00 AM – 10:00 AM</span>
+            </div>
+            <div class="bc-slot">
+              <span class="bc-slot-label">Afternoon Batch</span>
+              <span class="bc-slot-time"><i class="fas fa-cloud-sun"></i>3:30 PM – 4:30 PM</span>
+            </div>
+            <div class="bc-slot">
+              <span class="bc-slot-label">Evening Batch</span>
+              <span class="bc-slot-time"><i class="fas fa-moon"></i>4:30 PM – 5:30 PM</span>
+            </div>
+            <div class="bc-slot">
+              <span class="bc-slot-label">Weekend Batch</span>
+              <span class="bc-slot-time"><i class="fas fa-calendar-week"></i>Sat: 10 AM – 12 PM</span>
+            </div>
+          </div>
+        </div>
+        <div class="bc-footer"><a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;font-size:0.88rem;">Enquire Now</a></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px;" class="reveal">
+      <p style="margin-bottom:16px;"><i class="fas fa-info-circle" style="color:var(--blue);"></i> &nbsp;Batch sizes are limited to 12 students. Early registration is recommended.</p>
+      <a href="tel:+919998855440" class="btn btn-navy"><i class="fas fa-phone"></i>Call to Confirm Seat</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+   FAQ
+============================== -->
+<section id="faq" class="section-pad">
+  <div class="container">
+    <div class="text-center">
+      <div class="badge"><i class="fas fa-question-circle"></i> FAQs</div>
+      <h2 class="section-title display">Questions? We've<br><span class="grad">Got Answers</span></h2>
+      <p class="section-sub">Everything you need to know before you join. Can't find your answer? Call us directly at +91 99988 55440.</p>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item reveal delay-1">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">How many months does the IELTS course take?</span>
+          <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a">Our standard IELTS program runs for 2–3 months depending on your current level and target band. We also offer intensive 4-week crash courses for students with upcoming exam dates. A free level assessment is done before enrollment.</div>
+      </div>
+      <div class="faq-item reveal delay-2">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Do you offer online IELTS coaching?</span>
+          <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a">Yes! All three of our programs — IELTS Coaching, Spoken English, and Phonics for Kids — are available in fully live online mode via video conferencing. Online students receive the same study material and feedback as offline students.</div>
+      </div>
+      <div class="faq-item reveal delay-3">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">What is the ideal age to start Phonics?</span>
+          <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a">The ideal age to begin phonics is between 3 and 5 years when children are most receptive to sound-letter associations. However, our program accepts children up to age 10. Early starters tend to develop stronger reading skills and spelling abilities throughout school.</div>
+      </div>
+      <div class="faq-item reveal delay-4">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Can I take a free demo class before enrolling?</span>
+          <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a">Absolutely. We offer a free, no-obligation demo class for all our programs. Fill in the contact form on this page or call us directly, and we will schedule your demo at a convenient time. There is no pressure to join after the demo.</div>
+      </div>
+      <div class="faq-item reveal delay-1">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">What IELTS band score can I expect to achieve?</span>
+          <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a">Our students consistently achieve scores between Band 6 and Band 7.5. Results depend on your current proficiency, study effort, and time invested. We do a free assessment at the start to set realistic targets and build a personalised improvement plan.</div>
+      </div>
+      <div class="faq-item reveal delay-2">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Do you provide study materials and practice tests?</span>
+          <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a">Yes, all study materials are included in the course fee — printed and digital worksheets, vocabulary lists, grammar guides, speaking topic banks, and full-length mock test papers. For IELTS students, we conduct at least 4 full mock tests with detailed band-wise analysis.</div>
+      </div>
+      <div class="faq-item reveal delay-3">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Is Spoken English useful for working professionals?</span>
+          <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a">Absolutely. Our Spoken English course is specifically designed with working professionals in mind. We cover business communication, email writing, presentation delivery, and interview preparation — skills that directly impact career growth.</div>
+      </div>
+      <div class="faq-item reveal delay-4">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">How do I enrol or get more information?</span>
+          <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a">You can enquire by filling in the contact form on this page, calling us at +91 99988 55440, or messaging us on WhatsApp. We will get back to you within a few hours to discuss your goals, answer your questions, and schedule a free demo class.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+   CONTACT
+============================== -->
+<section id="contact" class="section-pad">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <div class="badge" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8);">
+          <i class="fas fa-envelope"></i> Get in Touch
+        </div>
+        <h2 class="section-title display">Ready to Start Your<br><span class="grad">Learning Journey?</span></h2>
+        <p class="section-sub">Fill in the form and we'll get back to you within a few hours. Or call us directly — we'd love to chat about your goals.</p>
+        <div class="contact-items">
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="ci-label">Phone / WhatsApp</div>
+              <div class="ci-value"><a href="tel:+919998855440" style="color:white;">+91 99988 55440</a></div>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="ci-label">Location</div>
+              <div class="ci-value">206,The Emperor,opp sukh sagar party plot,Nadiad,Gujarat, India</div>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <div class="ci-label">Institute Hours</div>
+              <div class="ci-value">Mon–Sat: 9:00 AM – 6:00 PM</div>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <div class="ci-label">Courses</div>
+              <div class="ci-value">IELTS · Spoken English · Phonics</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-socials">
+          <a href="https://wa.me/919998855440" class="cs-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="cs-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+         
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="contact-form">
+          <h3 class="form-title">📋 Book Your Free Demo Class</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input type="text" class="form-control" placeholder="Your full name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" class="form-control" placeholder="+91 XXXXX XXXXX">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" placeholder="yourname@email.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Course Interested In *</label>
+            <select class="form-control">
+              <option value="">Select a course</option>
+              <option>IELTS Coaching – Academic</option>
+              <option>IELTS Coaching – General Training</option>
+              <option>Spoken English Classes</option>
+              <option>Phonics for Kids (Age 3–10)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Preferred Mode</label>
+            <select class="form-control">
+              <option>Online Classes</option>
+              <option>Offline (In-Person) Classes</option>
+              <option>Both – Flexible</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Your Message (Optional)</label>
+            <textarea class="form-control" placeholder="Tell us about your goals, current level, or any questions..."></textarea>
+          </div>
+          <button class="btn btn-primary" style="width:100%;justify-content:center;padding:16px;" onclick="submitForm(this)">
+            <i class="fas fa-paper-plane"></i>Submit & Book Free Demo
+          </button>
+          <p style="color:rgba(255,255,255,0.4);font-size:0.75rem;text-align:center;margin-top:12px;">
+            <i class="fas fa-lock" style="margin-right:4px;"></i>We respect your privacy. No spam, ever.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+   MAP
+============================== -->
+<section id="map-section" class="section-pad-sm">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:36px;">
+      <div class="badge"><i class="fas fa-map-marker-alt"></i> Find Us</div>
+      <h2 class="section-title display">Visit Arpita Classes<br><span class="grad">in Nadiad</span></h2>
+      <p style="color:var(--slate);">Conveniently located in Nadiad, Gujarat. Easily accessible by road.</p>
+    </div>
+    <div class="map-wrapper reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.412401588792!2d72.8814524!3d22.675686799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e5b2400000003%3A0x43126028c4b9adfb!2sARPITA%20CLASSES!5e0!3m2!1sen!2sin!4v1781762701498!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Arpita Classes Location in Nadiad, Gujarat">
+      </iframe>
+    </div>
+    <div style="text-align:center;margin-top:28px;">
+      <a href="https://www.google.com/maps/dir//ARPITA+CLASSES,+206,+The+Emperor,+opposite+sukh+sagar+party+plot,+near+amba+ashram,+Bhakti+Nagar,+Nadiad,+Gujarat+387370/@22.6958139,72.8587262,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x395e5b2400000003:0x43126028c4b9adfb!2m2!1d72.8814524!2d22.6756868?hl=en-IN&entry=ttu&g_ep=EgoyMDI2MDYxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-navy">
+        <i class="fas fa-directions"></i>Get Directions
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+   FOOTER
+============================== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom:16px;">
+          <div class="logo-icon">A</div>
+          <div class="logo-text">
+            <div class="logo-name">Arpita Classes</div>
+            <div class="logo-tag">Nadiad, Gujarat • Est. 2009</div>
+          </div>
+        </div>
+        <p class="footer-about">Nadiad's most trusted IELTS coaching, Spoken English, and Phonics institute. 15+ years of transforming students' language abilities and opening doors to global opportunities.</p>
+        <div class="footer-contact-quick">
+          <a href="tel:+919998855440"><i class="fas fa-phone"></i>+91 99988 55440</a>
+          <a href="https://wa.me/919998855440"><i class="fab fa-whatsapp"></i>WhatsApp Us</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>206,The Emperor,opp sukh sagar party plot,Nadiad,Gujarat</a>
+        </div>
+      </div>
+      <div class="footer-col show-mobile">
+        <h4>Courses</h4>
+        <div class="footer-links">
+          <a href="#ielts">IELTS Coaching</a>
+          <a href="#ielts">Academic IELTS</a>
+          <a href="#ielts">General IELTS</a>
+          <a href="#spoken">Spoken English</a>
+          <a href="#phonics">Phonics for Kids</a>
+          <a href="#batches">Batch Schedule</a>
+        </div>
+      </div>
+      <div class="footer-col show-mobile">
+        <h4>IELTS Modules</h4>
+        <div class="footer-links">
+          <a href="#ielts">Listening</a>
+          <a href="#ielts">Reading</a>
+          <a href="#ielts">Writing (Task 1 & 2)</a>
+          <a href="#ielts">Speaking</a>
+          <a href="#ielts">Mock Tests</a>
+          <a href="#ielts">Band Analysis</a>
+        </div>
+      </div>
+      <div class="footer-col show-mobile">
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="#about">About Us</a>
+          <a href="#why">Why Choose Us</a>
+          <a href="#testimonials">Student Reviews</a>
+          <a href="#faq">FAQs</a>
+          <a href="#contact">Book Free Demo</a>
+          <a href="tel:+919998855440">Call Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">
+        © 2025 <span>Arpita Classes</span>. All rights reserved. | Nadiad, Gujarat, India
+      </div>
+      <div class="footer-badges">
+        <span class="footer-badge">IELTS Coaching</span>
+        <span class="footer-badge">Spoken English</span>
+        <span class="footer-badge">Phonics</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ==============================
+   WHATSAPP FLOAT
+============================== -->
+<div class="wa-float">
+  <div class="wa-label">Chat with us!</div>
+  <a href="https://wa.me/919998855440?text=Hello%2C%20I%20am%20interested%20in%20joining%20Arpita%20Classes.%20Please%20share%20more%20details." class="wa-btn" target="_blank" rel="noopener">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+<!-- ==============================
+   SCRIPTS
+============================== -->
+<script>
+// NAVBAR SCROLL
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// MOBILE MENU
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+// COURSE TABS
+function showCourse(id, btn) {
+  document.querySelectorAll('.course-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.ctab').forEach(t => t.classList.remove('active'));
+  document.getElementById('course-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+
+// FAQ
+function toggleFaq(el) {
+  const item = el.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// TESTIMONIALS SLIDER
+let tIndex = 0;
+const track = document.getElementById('testimonialsTrack');
+const cards = track.querySelectorAll('.tcard');
+const total = cards.length;
+const dotsContainer = document.getElementById('testimonialsDotsContainer');
+
+function buildDots() {
+  for (let i = 0; i < total; i++) {
+    const d = document.createElement('div');
+    d.className = 'tdot' + (i === 0 ? ' active' : '');
+    d.onclick = () => goToTestimonial(i);
+    dotsContainer.appendChild(d);
+  }
+}
+buildDots();
+
+function updateSlider() {
+  const cardW = cards[0].offsetWidth + 24;
+  track.style.transform = `translateX(-${tIndex * cardW}px)`;
+  document.querySelectorAll('.tdot').forEach((d,i) => d.classList.toggle('active', i === tIndex));
+}
+function nextTestimonial() { tIndex = (tIndex + 1) % total; updateSlider(); }
+function prevTestimonial() { tIndex = (tIndex - 1 + total) % total; updateSlider(); }
+function goToTestimonial(i) { tIndex = i; updateSlider(); }
+setInterval(nextTestimonial, 5000);
+window.addEventListener('resize', updateSlider);
+
+// SCROLL REVEAL
+const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.12 });
+revealEls.forEach(el => observer.observe(el));
+
+// COUNTERS
+function animateCounter(el, target, duration = 2000) {
+  let start = 0;
+  const step = target / (duration / 16);
+  const timer = setInterval(() => {
+    start += step;
+    if (start >= target) { el.textContent = target.toLocaleString(); clearInterval(timer); return; }
+    el.textContent = Math.floor(start).toLocaleString();
+  }, 16);
+}
+
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const target = parseInt(e.target.dataset.target);
+      animateCounter(e.target, target);
+      counterObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+// HERO COUNTERS
+function animateHeroCounter(id, target, duration = 2000) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  let start = 0;
+  const step = target / (duration / 16);
+  const timer = setInterval(() => {
+    start += step;
+    if (start >= target) { el.textContent = target.toLocaleString(); clearInterval(timer); return; }
+    el.textContent = Math.floor(start).toLocaleString();
+  }, 16);
+}
+setTimeout(() => {
+  animateHeroCounter('h-students', 5000, 2500);
+  animateHeroCounter('h-band', 500, 2000);
+  animateHeroCounter('h-years', 15, 1500);
+}, 600);
+
+// FORM SUBMIT
+function submitForm(btn) {
+  btn.innerHTML = '<i class="fas fa-check-circle"></i> Request Submitted! We\'ll call you soon.';
+  btn.style.background = 'linear-gradient(135deg, #16A34A, #15803D)';
+  btn.disabled = true;
+}
+</script>
+</body>
+</html>
